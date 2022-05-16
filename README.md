@@ -128,6 +128,13 @@ makepkg -si
 makepkg -si
 ```
 Like the ```mesa-git```, The first time it took about 20 minutes to compile, and the second time only took a few seconds.
+## Environment Variable
+You need to edit ```/etc/environment/``` to make sure you are using this driver.   
+Add this line to ```/etc/environment/```
+```
+VK_ICD_FILENAMES=VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/virtio_icd.i686.json:/usr/share/vulkan/icd.d/virtio_icd.x86_64.json
+```
+Then reboot the termina, don't forget using --enable-gpu and --enable-vulkan.  
 ## Check If It works
 You need ```vulkan-tools``` to see if it works.
 ```
