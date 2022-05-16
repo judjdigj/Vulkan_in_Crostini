@@ -26,6 +26,11 @@ You can test on your devices too.
 I set all these things in **Stable channel**, if you're using **Beta or Dev(even Canary) channel**, there might be some difference, I will mention it below.
 Remember this is only a note, not a full step-by-step tutorial, since there's so many tutorials available. But I would post the link of the tutorial I followed.
 ## Install Arch Linux
+You may asking: why arch is in need? Can I install it on default Debian container?   
+Sure you can. Just download the mesa source code and compile following the how-to tutorial on Google.   
+However, you may see some lack of dependencies, or the required dependencies is too old. And manually complie/install is a little bit difficult.   
+For arch, the driver with virtio Vulkan support can be download and compiled easily using AUR. And there's many tutorial about it. So I recommended using Arch.   
+Of course, if you can successfully run it in Debian, it will be really helpful to post the steps.   
 I basically following the tutorial on [archlinux wiki](https://wiki.archlinux.org/title/Chrome_OS_devices/Crostini). But there's some difference.  
 ### When You Have Multi-container Support
 In **Dev and Canary channel**, multi-container is supported by default and it seems that you can't turn it off, and destroy termina might lead to a buggy situation, **so you don't need to "destroy termina" and rename container to penguin**, just simply using 
